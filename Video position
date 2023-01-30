@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="view port"
+        content="width-device-width,intial-scale-1">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+            }
+            #my video{
+                position: fixed;
+                right: 0px;
+                bottom: 0px;
+                min-width: 100%;
+                min-height: 100%;
+            }
+            .content{
+                position: fixed;
+                bottom: 0px;
+                background-color: rgba(0,0,0,0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+            #my btn{
+                width: 200px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background-color: #000;
+                color: pink;
+                cursor: pointer;
+            }
+            #my btn :hover{
+                background:#add;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <viedo autoplay muted loop id="my viedo/mp4">
+            <source src="rain.mp4">
+            your browser does not support htmls video 
+        </viedo>
+        <div class="content">
+            <h1>heading</h1>
+            <p>this is a silver oak university</p>
+            <buttom id="my btn"
+            onclick="MYfunction()">pause</buttom>
+        </div>
+        <script>
+            var video=document-gelementById("my viedo");
+            var btn=
+            document-gelementById("my viedo");
+            function myfunction(){
+                if(videopaused){
+                    btn.innerHTML="pause";
+                }
+                else
+                {
+                    video-pause();
+                    btn.innerHTML="play";
+                }
+            }
+        </script>
+    </body>
+</html>
